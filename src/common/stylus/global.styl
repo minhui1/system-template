@@ -1,0 +1,40 @@
+#root
+  height: 100%
+  touch-action: none
+.G-main
+  min-width: 1080px
+  padding: 20px
+  min-height: 300px  
+.G-fullpage
+    display: flex
+    flex-direction: column
+    width: 100%
+    min-height: 100%
+    overflow-x: hidden
+/*清浮动*/
+.clearfix:after
+  content: "."
+  display: block
+  height: 0
+  clear: both
+  visibility: hidden
+.clearfix
+  display:block
+
+.G-animate-rotate
+  display: inline-block
+  animation: commonRotate 2s linear infinite
+
+@keyframes commonRotate {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}
+}
+
+.G-card
+  background: #fff
+
+.G-col-error
+  color: #f81d22
+
+.G-col-succ
+  color: #0b8235

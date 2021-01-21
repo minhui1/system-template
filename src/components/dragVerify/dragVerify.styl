@@ -1,0 +1,36 @@
+.M-dragVerify
+    overflow hidden
+    @font-face
+        font-family: "dragVerifyFont"
+        src: url('data:application/x-font-woff;charset=utf-8;base64,d09GMgABAAAAAALIAAsAAAAABsAAAAJ7AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAp4fQE2AiQDCAsGAAQgBYU1Bzsb9gURFYxPsr9DimP7Q0EVSgitI22QS90zHSt2kVNPCrTXkq2ZyucH4/d0HANUAQAAAAARPO1Hm7e7J+qINpqIVfMSIJo3Gt4I3UpQTYRyH5xjgylY41N41ssAJM8WZAMsMDKDiRxgINQSPSA9//3f0yjtMsnMwgMgAxUXC+IjWV70W2VF718LRAyR2dwMXaMiDFNyHvwv35GUlhEuhPETl9Pf9vTAEwBna25uk6ZdlI0xziMsgsgbxm4ieID3CTQatURssOOAKcCyQFzo9FErhBXFydULtQ17i7il6tPldG7yz8e/o56kJgMNe05tPOF+hgX5YrWngAiCcbgGGUtQiAON6V0UDpE1pmOSY9UGP1dTqziqSTh/HahuBsO68Ewilh61OoEiB0excNJtpLa289+je7241FcPHMtjj4peTQHWPKjSW8m8q0Ab6u9YA1RyWYHgTP7pYai3gHe2zoOVwjAv9bv0BL9GHNhXYhmwpBKKjd5kdFIyoRHGqAL+Th+n6nvuIx9a9dyNt85URmatFoEFXUXWaLKJrNVqL9loscOHm3S5oigNWOShRoZhb8mk1TcyG/YfKHi0kDV6Y6GytgldTTY6FJ3ZZDZeOkyCVjGA+0PyvBGarIbY+ENJ9B/yw7wwnouVmiYBl45xJN6grRo7N+KGsvT044qdKgEJr9DxGC4Lwy6c0Ws1qe59XZP5psrzWhgJWsUA7g/J80b0cTUWG38oif6D8f0vjOdiZVDbkVh1H6k4emirZjA4qrempkd//bhip0pAwitMm4XLwrA3z8rotZom1O99XV9eNlRdPYp2/cm80wYwENAlvve2MvDpFiwlxUmLAgAAAA==') format('woff2')
+    .dragVerifyFont
+        font-family: "dragVerifyFont" !important
+        font-size: 16px
+        font-style: normal
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+
+    .ficon-double-right:before
+        content: "\e61f"
+    .dragVerify-wrapper
+        position: relative
+        height: 100%
+    .show-text
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        text-align: center
+    .drag-block
+        position: absolute
+        top: 0
+        height: 100%
+        text-align: center
+        cursor: pointer
+        user-select: none
+        box-shadow: 0 0 3px rgba(0,0,0,0.3)
+    .process-bar
+        width: 0
+        height: 100%
+        transition: background .5s ease-in
